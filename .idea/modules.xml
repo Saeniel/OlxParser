@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OlxParser.iml" filepath="$PROJECT_DIR$/.idea/modules/OlxParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OlxParser_main.iml" filepath="$PROJECT_DIR$/.idea/modules/OlxParser_main.iml" group="OlxParser" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OlxParser_test.iml" filepath="$PROJECT_DIR$/.idea/modules/OlxParser_test.iml" group="OlxParser" />
+    </modules>
+  </component>
+</project>
