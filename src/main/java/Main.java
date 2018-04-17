@@ -47,15 +47,14 @@ public class Main {
 
         while (c) {
             System.out.println("Парсить номера телефонов? (y/n)");
-            String answer = readUserInput.nextLine(); // считываем из консоли
-            answer = answer.toLowerCase(); // переводим в нижиний регистр, чтобы принимало {y, Y, n, N}
-            switch (answer) {
-                case "y": {
+            char x = readUserInput.next().charAt(0); // считываем из консоли
+            switch (x) {
+                case 'y': {
                     shouldParsePhone = true;
                     c = false;
                     break;
                 }
-                case "n": {
+                case 'n': {
                     shouldParsePhone = false;
                     c = false;
                     break;
@@ -65,7 +64,7 @@ public class Main {
                 }
             }
         }
-
+        System.out.println("shouldParsePhone " + shouldParsePhone);
         parseOLX();
 
     }
@@ -305,7 +304,7 @@ public class Main {
             phone = "";
         }
 
-        if(!isAdActive) {
+        if(isAdActive) {
             CarOLX carOLX = new CarOLX(brand, model, image, price, year, color, capacity, mileage, bodyType, fuel, gearBox, city, phone, datePublicated, postIdOLX);
             listOlx.add(carOLX);
         }
