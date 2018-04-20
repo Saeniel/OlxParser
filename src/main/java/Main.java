@@ -67,6 +67,10 @@ public class Main {
         System.out.println("shouldParsePhone " + shouldParsePhone);
         parseOLX();
 
+        for(int i = 0; i < listOlx.size(); i++) { // в цикле проходим по всем отработанным объявлениям
+            listOlx.get(i).writeToDatabase();     // пишем в БД
+        }
+
     }
 
     public static void parseOLX() throws Exception {
